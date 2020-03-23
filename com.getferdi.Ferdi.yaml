@@ -18,9 +18,27 @@ finish-args:
   - --filesystem=xdg-pictures:ro
   - --filesystem=xdg-videos:ro
   - --filesystem=xdg-documents:ro
+  - --filesystem=/run/.heim_org.h5l.kcm-socket
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
 modules:
+  - name: krb5
+    subdir: src
+    config-opts:
+      - --disable-static
+      - --disable-rpath
+    sources:
+      - type: archive
+        url: https://kerberos.org/dist/krb5/1.16/krb5-1.16.2.tar.gz
+        sha256: 9f721e1fe593c219174740c71de514c7228a97d23eb7be7597b2ae14e487f027
+  - name: krb5-config
+    buildsystem: simple
+    sources:
+      - type: file
+        path: krb5.conf
+    build-commands:
+        - mkdir -p /app/etc
+        - install -m 644 krb5.conf /app/etc/krb5.conf
   - name: ferdi-desktop
     buildsystem: simple
     build-commands:
