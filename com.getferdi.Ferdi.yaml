@@ -13,7 +13,7 @@ finish-args:
   - --share=ipc
   - --socket=pulseaudio
   - --share=network
-  - --device=dri
+  - --device=all
   - --filesystem=xdg-download
   - --filesystem=xdg-pictures:ro
   - --filesystem=xdg-videos:ro
