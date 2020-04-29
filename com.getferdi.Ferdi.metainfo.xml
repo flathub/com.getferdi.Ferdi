@@ -25,8 +25,21 @@
     <screenshot type="default">
       <image type="source">https://raw.githubusercontent.com/getferdi/ferdi/develop/branding/screenshots/hero.png</image>
     </screenshot>
+    <screenshot>
+      <image type="source">https://raw.githubusercontent.com/getferdi/ferdi/develop/branding/screenshots/application.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://raw.githubusercontent.com/getferdi/ferdi/develop/branding/screenshots/service-store.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://raw.githubusercontent.com/getferdi/ferdi/develop/branding/screenshots/todos.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://raw.githubusercontent.com/getferdi/ferdi/develop/branding/screenshots/workspaces.png</image>
+    </screenshot>
   </screenshots>
   <releases>
+    <release version="5.5.0" date="2020-04-27" />
     <release version="5.4.3" date="2020-01-29" />
   </releases>
   <content_rating type="oars-1.1">

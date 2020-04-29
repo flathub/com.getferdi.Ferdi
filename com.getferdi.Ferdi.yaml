@@ -29,8 +29,8 @@ modules:
       - --disable-rpath
     sources:
       - type: archive
-        url: https://kerberos.org/dist/krb5/1.16/krb5-1.16.2.tar.gz
-        sha256: 9f721e1fe593c219174740c71de514c7228a97d23eb7be7597b2ae14e487f027
+        url: https://kerberos.org/dist/krb5/1.18/krb5-1.18.1.tar.gz
+        sha256: 02a4e700f10936f937cd1a4c303cab8687a11abecc6107bd4b706b9329cd5400
   - name: krb5-config
     buildsystem: simple
     sources:
@@ -54,11 +54,11 @@ modules:
       - install -Dm644 com.getferdi.Ferdi.metainfo.xml /app/share/metainfo/com.getferdi.Ferdi.metainfo.xml
     sources:
       - type: file
-        url: https://github.com/getferdi/ferdi/releases/download/v5.4.3/ferdi_5.4.3_amd64.deb
-        sha256: 254537e34ab30534cc9c528ffe8e35c1a75607ec648f8a1374cfb8ff642bd1f2
+        url: https://github.com/getferdi/ferdi/releases/download/v5.5.0/ferdi_5.5.0_amd64.deb
+        sha256: 7338753c75ac6e3dcd1b0c4af4dcf1a927e7449acf095b7155e547822ddb4444
       - type: file
-        url: https://github.com/getferdi/ferdi/archive/v5.4.3.tar.gz
-        sha256: 5b76514a103a46c9c3c578a474de28b9d5ba4140122cd0950cfe02b9b8e2c84f
+        url: https://github.com/getferdi/ferdi/archive/v5.5.0.tar.gz
+        sha256: 319b02b565e34720c8ccefdb08cfe37219304c002e469fdf1a15c8971b573fc3
       - type: script
         dest-filename: ferdi.sh
         commands:
