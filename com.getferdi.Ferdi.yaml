@@ -21,6 +21,7 @@ finish-args:
   - --filesystem=/run/.heim_org.h5l.kcm-socket
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
+  - --own-name=org.kde.*
 modules:
   - name: krb5
     subdir: src
