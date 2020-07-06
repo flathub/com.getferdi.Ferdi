@@ -55,16 +55,15 @@ modules:
       - install -Dm644 com.getferdi.Ferdi.metainfo.xml /app/share/metainfo/com.getferdi.Ferdi.metainfo.xml
     sources:
       - type: file
-        url: https://github.com/getferdi/ferdi/releases/download/v5.5.0/ferdi_5.5.0_amd64.deb
-        sha256: 7338753c75ac6e3dcd1b0c4af4dcf1a927e7449acf095b7155e547822ddb4444
+        url: https://github.com/getferdi/ferdi/releases/download/5.6.0-beta.2/ferdi_5.6.0-beta.2_amd64.deb
+        sha256: 3a190914c8f0982132a3272150cfea178c010cd43f44dffeef73b6b1c93d0d6a
       - type: file
-        url: https://github.com/getferdi/ferdi/archive/v5.5.0.tar.gz
-        sha256: 319b02b565e34720c8ccefdb08cfe37219304c002e469fdf1a15c8971b573fc3
+        url: https://github.com/getferdi/ferdi/archive/5.6.0-beta.2.tar.gz
+        sha256: b7d89477a66ce7ce120989ffdd8950276c7fc8333b71e47ff00f28802faf5697
       - type: script
         dest-filename: ferdi.sh
         commands:
           - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
           - exec zypak-wrapper /app/Ferdi/ferdi "$@"
-          
       - type: file
         path: com.getferdi.Ferdi.metainfo.xml
