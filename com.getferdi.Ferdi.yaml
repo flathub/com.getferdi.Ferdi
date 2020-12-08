@@ -14,10 +14,8 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --device=all
+  - --filesystem=home:ro
   - --filesystem=xdg-download
-  - --filesystem=xdg-pictures:ro
-  - --filesystem=xdg-videos:ro
-  - --filesystem=xdg-documents:ro
   - --filesystem=/run/.heim_org.h5l.kcm-socket
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
