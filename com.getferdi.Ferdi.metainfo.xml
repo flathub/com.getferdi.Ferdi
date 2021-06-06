@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.getferdi.Ferdi</id>
-  <launchable>com.getferdi.Ferdi.desktop</launchable>>
+  <launchable type="desktop-id">com.getferdi.Ferdi.desktop</launchable>>
   <name>Ferdi</name>
   <project_license>Apache-2.0</project_license>
   <developer_name>Ferdi Team</developer_name>
