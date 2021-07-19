@@ -53,11 +53,11 @@ modules:
       - install -Dm644 com.getferdi.Ferdi.metainfo.xml /app/share/metainfo/com.getferdi.Ferdi.metainfo.xml
     sources:
       - type: file
-        url: https://github.com/getferdi/ferdi/releases/download/v5.6.0-beta.7/ferdi_5.6.0-beta.7_amd64.deb
-        sha256: c40c7736e925121715ffde1e9b3a4fa19e7e51c28e7338fe5bb886d91635529d
+        url: https://github.com/getferdi/ferdi/releases/download/v5.6.0/ferdi_5.6.0_amd64.deb
+        sha256: c9a01835002f6ed02bc3da80b5b4c30f5d5af671f639010f13c40b83513bf587
       - type: file
-        url: https://github.com/getferdi/ferdi/archive/refs/tags/v5.6.0-beta.7.tar.gz
-        sha256: 197a94ce90808bc7c720a27fd24a077a5011cb1882ef926230c294bd5143b7f7
+        url: https://github.com/getferdi/ferdi/archive/refs/tags/v5.6.0.tar.gz
+        sha256: 53f9cc07b267264b174ee5453a8cc5d0d6826838a4d9667f70036be62d45d6da
       - type: script
         dest-filename: ferdi.sh
         commands:
