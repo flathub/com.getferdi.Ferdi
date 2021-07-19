@@ -28,8 +28,8 @@ modules:
       - --disable-rpath
     sources:
       - type: archive
-        url: https://kerberos.org/dist/krb5/1.18/krb5-1.18.1.tar.gz
-        sha256: 02a4e700f10936f937cd1a4c303cab8687a11abecc6107bd4b706b9329cd5400
+        url: https://kerberos.org/dist/krb5/1.19/krb5-1.19.tar.gz
+        sha256: bc7862dd1342c04e1c17c984a268d50f29c0a658a59a22bd308ffa007d532a2e
   - name: krb5-config
     buildsystem: simple
     sources:
@@ -53,16 +53,15 @@ modules:
       - install -Dm644 com.getferdi.Ferdi.metainfo.xml /app/share/metainfo/com.getferdi.Ferdi.metainfo.xml
     sources:
       - type: file
-        url: https://github.com/getferdi/ferdi/releases/download/v5.5.0/ferdi_5.5.0_amd64.deb
-        sha256: 7338753c75ac6e3dcd1b0c4af4dcf1a927e7449acf095b7155e547822ddb4444
+        url: https://github.com/getferdi/ferdi/releases/download/v5.6.0/ferdi_5.6.0_amd64.deb
+        sha256: c9a01835002f6ed02bc3da80b5b4c30f5d5af671f639010f13c40b83513bf587
       - type: file
-        url: https://github.com/getferdi/ferdi/archive/v5.5.0.tar.gz
-        sha256: 319b02b565e34720c8ccefdb08cfe37219304c002e469fdf1a15c8971b573fc3
+        url: https://github.com/getferdi/ferdi/archive/refs/tags/v5.6.0.tar.gz
+        sha256: 53f9cc07b267264b174ee5453a8cc5d0d6826838a4d9667f70036be62d45d6da
       - type: script
         dest-filename: ferdi.sh
         commands:
           - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
           - exec zypak-wrapper /app/Ferdi/ferdi "$@"
-          
       - type: file
         path: com.getferdi.Ferdi.metainfo.xml
