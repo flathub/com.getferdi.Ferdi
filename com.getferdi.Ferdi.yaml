@@ -1,8 +1,8 @@
 app-id: com.getferdi.Ferdi
 base: org.electronjs.Electron2.BaseApp
-base-version: '20.08'
+base-version: '21.08'
 runtime: org.freedesktop.Platform
-runtime-version: '20.08'
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 command: ferdi
 separate-locales: false
@@ -30,6 +30,11 @@ modules:
       - type: archive
         url: https://kerberos.org/dist/krb5/1.19/krb5-1.19.tar.gz
         sha256: bc7862dd1342c04e1c17c984a268d50f29c0a658a59a22bd308ffa007d532a2e
+        x-checker-data:
+          type: anitya
+          project-id: 13287
+          stable-only: true
+          url-template: https://kerberos.org/dist/krb5/$major.$minor/krb5-$major.$minor.$patch.tar.gz
   - name: krb5-config
     buildsystem: simple
     sources:
@@ -55,9 +60,19 @@ modules:
       - type: file
         url: https://github.com/getferdi/ferdi/releases/download/v5.6.0/ferdi_5.6.0_amd64.deb
         sha256: c9a01835002f6ed02bc3da80b5b4c30f5d5af671f639010f13c40b83513bf587
+        x-checker-data:
+          type: html
+          url: https://getferdi.com/download/
+          version-pattern: Current version: ([\\d\\.-]+)
+          url-pattern: https://github.com/getferdi/ferdi/releases/download/v$version/ferdi_{$version}_amd64.deb
       - type: file
         url: https://github.com/getferdi/ferdi/archive/refs/tags/v5.6.0.tar.gz
         sha256: 53f9cc07b267264b174ee5453a8cc5d0d6826838a4d9667f70036be62d45d6da
+        x-checker-data:
+          type: html
+          url: https://getferdi.com/download/
+          version-pattern: Current version: ([\\d\\.-]+)
+          url-pattern: https://github.com/getferdi/ferdi/archive/refs/tags/v$version.tar.gz
       - type: script
         dest-filename: ferdi.sh
         commands:
