@@ -63,16 +63,16 @@ modules:
         x-checker-data:
           type: html
           url: https://getferdi.com/download/
-          version-pattern: 'Current version: ([\\d\\.-]+)'
-          url-pattern: https://github.com/getferdi/ferdi/releases/download/v$version/ferdi_{$version}_amd64.deb
+          version-pattern: 'Current version: ([\d\.-]+)'
+          url-template: https://github.com/getferdi/ferdi/releases/download/v$version/ferdi_${version}_amd64.deb
       - type: file
         url: https://github.com/getferdi/ferdi/archive/refs/tags/v5.6.0.tar.gz
         sha256: 53f9cc07b267264b174ee5453a8cc5d0d6826838a4d9667f70036be62d45d6da
         x-checker-data:
           type: html
           url: https://getferdi.com/download/
-          version-pattern: 'Current version: ([\\d\\.-]+)'
-          url-pattern: https://github.com/getferdi/ferdi/archive/refs/tags/v$version.tar.gz
+          version-pattern: 'Current version: ([\d\.-]+)'
+          url-template: https://github.com/getferdi/ferdi/archive/refs/tags/v$version.tar.gz
       - type: script
         dest-filename: ferdi.sh
         commands:
