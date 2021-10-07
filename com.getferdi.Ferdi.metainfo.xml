@@ -39,6 +39,8 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.6.3-b1" date="2021-10-06" />
+    <release version="5.6.2" date="2021-09-13" />
     <release version="5.6.0" date="2021-07-18" />
     <release version="5.6.0-b6" type="development" date="2021-05-31" />
     <release version="5.6.0-b5" type="development" date="2020-12-20" />
