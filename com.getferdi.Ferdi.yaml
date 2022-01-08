@@ -58,16 +58,16 @@ modules:
       - install -Dm644 com.getferdi.Ferdi.metainfo.xml /app/share/metainfo/com.getferdi.Ferdi.metainfo.xml
     sources:
       - type: file
-        url: https://github.com/getferdi/ferdi/releases/download/v5.6.8/ferdi_5.6.8_amd64.deb
-        sha256: 45e15fe6aed99b9bb88f65d23dc06d7bdff8f4c2eb58683d99e76d0991188777
+        url: https://github.com/getferdi/ferdi/releases/download/v5.6.9/ferdi_5.6.9_amd64.deb
+        sha256: 633309eead9bde42e3ef2a06a268a35f019320d8f6667e30cae7f5345aa0bb5b
         x-checker-data:
           type: html
           url: https://getferdi.com/download/
           version-pattern: 'Current version: ([\d\.-]+)'
           url-template: https://github.com/getferdi/ferdi/releases/download/v$version/ferdi_${version}_amd64.deb
       - type: file
-        url: https://github.com/getferdi/ferdi/archive/refs/tags/v5.6.8.tar.gz
-        sha256: 535fa59d83a445107f55b87908dfd876548433871616f00ebe0579b5987db422
+        url: https://github.com/getferdi/ferdi/archive/refs/tags/v5.6.9.tar.gz
+        sha256: 694be5991c1b33fa9d7d9d9846c64cc096784235f61876874b815ae50cc6ff9e
         x-checker-data:
           type: html
           url: https://getferdi.com/download/
