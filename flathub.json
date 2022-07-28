@@ -1,5 +1,5 @@
 {
   "only-arches": ["x86_64"],
-  "end-of-life": "This application has stopped development."
+  "end-of-life": "This application has stopped development.",
   "end-of-life-rebase": "org.ferdium.Ferdium"
 }
